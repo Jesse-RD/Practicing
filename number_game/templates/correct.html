@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="m-auto mt-5 container">
+        <h1 class="text-center mt-5">That Number Was Correct!</h1>
+        <h2 class="text-center mt-5">Play Again?</h2>
+        <form class="text-center" action="/reset" method="post">
+            <button class="mt-3 btn btn-primary" type="submit">Restart</button>
+        </form>
+    </div>
+    
+</body>
+</html>
